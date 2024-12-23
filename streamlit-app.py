@@ -64,8 +64,7 @@ if st.session_state.page_selection == 'about':
 
 elif st.session_state.page_selection == 'dataset':
     st.title('Dataset Exploration')
-
-    # Buttons for dataset exploration options
+    # Buttons for dataset exploration options 
     option = st.radio(
         "Choose an action for dataset exploration:",
         ("View Full Dataset", "View Dataset Statistics", "View Dataset Information")
@@ -97,7 +96,7 @@ elif st.session_state.page_selection == 'dataset':
         st.subheader("Dimensions du dataset")
         st.write(df.shape)
 
-        
+
 
     elif option == "View Dataset Statistics":
         st.subheader("Dataset Statistics")
